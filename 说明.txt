@@ -1,0 +1,49 @@
+科室信息：单链表	//departmentList
+医生信息：单链表	//doctorList
+医生排班：数组		//
+患者信息：单链表	//patientList
+候诊队列：循环队列	//appointmentList
+
+智能导诊：//查找
+医生查询：//查找
+
+症状与科室关联关系：加权二部图，症状和科室为顶点，关联强度为边权
+
+hospital-appointment-system/
+├── hospital.pro
+├── data/				//测试数据
+│   ├── departments.txt
+│   ├── doctors.txt
+│   ├── schedules.txt
+│   ├── patients.txt
+│   ├── rooms.txt
+│   ├── corridors.txt
+│   └── symptoms.txt
+└── src/
+    ├── main.cpp
+    ├── entity/
+    │   └── entity.h		//struct
+    ├── container/
+    │   ├── deptlist.h/.cpp
+    │   ├── doctorlist.h/.cpp
+    │   ├── patientlist.h/.cpp
+    │   ├── apptlist.h/.cpp
+    │   ├── scheduletable.h/.cpp
+    │   ├── floorgraph.h/.cpp
+    │   ├── bigraph.h/.cpp
+    │   ├── waitqueue.h/.cpp
+    │   └── evallist.h/.cpp
+    ├── service/
+    │   ├── hospitaldata.h/.cpp
+    │   ├── guideservice.h/.cpp
+    │   ├── appointmentservice.h/.cpp
+    │   ├── queryservice.h/.cpp
+    │   └── routeservice.h/.cpp
+    └── ui/
+        ├── mainwindow.h/.cpp
+        ├── homepage.h/.cpp
+        ├── guidepage.h/.cpp
+        ├── appointmentpage.h/.cpp
+        ├── myapptpage.h/.cpp
+        ├── schedulepage.h/.cpp
+        └── routepage.h/.cpp
